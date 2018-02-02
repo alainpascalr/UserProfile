@@ -1,0 +1,56 @@
+<div class="container color-dark">
+  <div class="col">
+    <p> Add a bucket list item</p>
+  </div>
+  <div class="col">
+    <p>Your bucket list ({{ itemCount }})</p>
+  </div>
+</div>
+<div class="container color-light " [@goals]="goals.length">
+  <div class="col">
+    <p class="sm">Use this forn below to add a new  bucket list goal. What
+      do you want to do with your life.
+    </p>
+
+    <form>
+      <input type="text" class="txt" name="item" placehodler="life goal.." [(ngModel)]="goalText">
+      <input type="submit" class="btn" [value]="btnText" (click)="addItem()">
+    </form>
+  </div>
+  <div class="col">
+    <p class="life-container" *ngFor="let goal of goals" >
+      {{ goal }}
+    </p>
+  </div>
+
+
+  <div class="col">
+
+    <form>
+      <input type="text" class="txt" name="item" placehodler="life goal.." [(ngModel)]="goalText">
+      <input type="submit" class="btn" [value]="btnText" (click)="addItem()">
+    </form>
+
+    <br><br>
+
+    <form class="form-inline" #form="ngForm">
+
+      <div class="form-group">
+        <input type="text" class="txt form-control" name="latitude" [(ngModel)]="latitude" placeholder="Enter latitude" required>
+      </div>
+
+      <!-- <div class="form-group">
+        <input type="text" class="form-control" name="longitude" [(ngModel)]="longitude" placeholder="Enter longitude" required>
+      </div> -->
+
+      <input type="submit" class="btn"  [disabled]="form.invalid" (click)="geocodeAddress()" value="Go">
+    </form>
+
+  </div>
+
+
+  <div id="map" class="col" #gmap style="height:400px;">
+
+  </div>
+</div>
+
