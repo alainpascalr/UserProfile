@@ -56,7 +56,7 @@ export class HomeComponent implements OnInit {
 
 geocodeAddress() {
   var resultsMap = new google.maps.Map(document.getElementById('map'), {
-    zoom: 8,
+    zoom: 15,
     center: {lat: -34.397, lng: 150.644}
   });
   var geocoder = new google.maps.Geocoder();
