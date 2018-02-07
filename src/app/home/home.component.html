@@ -1,4 +1,30 @@
-<div class="container color-dark">
+<div class="container color-light">
+  <form>
+    <h1>Create your profile card</h1>
+    <div class="centered">
+      <input type="text" class="text" name="name" placeholder="Full name" [(ngModel)] = "name">
+      <input type="text" class="text" name="title" placeholder="Job title" [(ngModel)] = "title">
+      <input type="text" class="text" name="address" placeholder="Full address" [(ngModel)] = "address">
+      <!-- <input type="text" class="text" name="province" placeholder="Province" [(ngModel)] = "province"> -->
+      <input type="email" class="text" name="email" placeholder="Email" [(ngModel)] = "email">
+      <p class="text">Social Media</p>
+      <input type="url" class="text" name="social" placeholder="Facebook URL" [(ngModel)]="facebook">
+      <input type="url" class="text" name="instagram" placeholder="Instagram URL" [(ngModel)] = "instagram">
+      <div>
+        <input type="button" routerLink ="profile" class="button" value="Create Profile" (click)="addItem()">
+      </div>
+    </div>
+
+
+
+
+  </form>
+</div>
+
+<br>
+
+<!-- 
+<div class="bucket-container color-dark">
   <div class="col">
     <p> Add a bucket list item</p>
   </div>
@@ -6,6 +32,7 @@
     <p>Your bucket list ({{ itemCount }})</p>
   </div>
 </div>
+
 <div class="container color-light " [@goals]="goals.length">
   <div class="col">
     <p class="sm">Use this forn below to add a new  bucket list goal. What
@@ -39,9 +66,9 @@
         <input type="text" class="txt form-control" name="latitude" [(ngModel)]="latitude" placeholder="Enter latitude" required>
       </div>
 
-      <!-- <div class="form-group">
+      <div class="form-group">
         <input type="text" class="form-control" name="longitude" [(ngModel)]="longitude" placeholder="Enter longitude" required>
-      </div> -->
+      </div>
 
       <input type="submit" class="btn"  [disabled]="form.invalid" (click)="geocodeAddress()" value="Go">
     </form>
@@ -52,5 +79,5 @@
   <div id="map" class="col" #gmap style="height:400px;">
 
   </div>
-</div>
+</div> -->
 

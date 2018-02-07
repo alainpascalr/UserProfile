@@ -1,4 +1,38 @@
-.container {
+.container{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+div.centered{
+    text-align: center;
+}
+input.text {
+    border: 0;
+    padding: 1em;
+    width: 60%;
+    margin-bottom: 2em;
+}
+input.button {
+    border: 0;
+    padding:1em 3em;
+    background: linear-gradient(135deg, rgb(19, 241, 252), rgb(4, 112, 220));
+    color:rgb(255, 255, 255);
+    margin-bottom:2em;
+    cursor:pointer;
+}
+p.text{
+    margin: auto 20%;
+    float: left;
+}
+h1{
+    text-align: center;
+    margin: 2em;
+}
+
+
+
+
+.bucket-container {
     display: grid;
     grid-template-columns: 50% auto;
 }
@@ -9,7 +43,7 @@
     background: #2885C4;
 }
 .color-light {
-    background: #57B3F1;
+    background: rgb(43, 79, 104);
 }
 
 input.txt {
@@ -22,7 +56,7 @@ input.btn {
     border: 0;
     display:block;
     padding:1em 3em;
-    background:#A5F883;
+    background:rgb(207, 232, 255);
     color:#003A61;
     margin-bottom:1em;
     cursor:pointer;
