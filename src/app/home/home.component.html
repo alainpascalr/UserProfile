@@ -1,5 +1,5 @@
 <div class="container color-light">
-  <form>
+  <form class="form-inline" #form="ngForm">
     <h1>Create your profile card</h1>
     <div class="centered">
       <input type="text" class="text" name="name" placeholder="Full name" [(ngModel)] = "name">
@@ -14,13 +14,8 @@
         <input type="button" routerLink ="profile" class="button" value="Create Profile" (click)="addItem()">
       </div>
     </div>
-
-
-
-
   </form>
 </div>
-
 <br>
 
 <!-- 
@@ -79,5 +74,5 @@
   <div id="map" class="col" #gmap style="height:400px;">
 
   </div>
-</div> -->
-
+</div>
+ -->

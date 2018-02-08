@@ -88,7 +88,7 @@ export class HomeComponent implements OnInit {
 //       resultsMap.setCenter(results[0].geometry.location);
 //       var marker = new google.maps.Marker({
 //         map: resultsMap,
-//         position: results[0].geometry.location
+//         position: results[0].geometry.locations
 //       });
 //   });
 // }

@@ -2,16 +2,19 @@
   <div class="card">
     <img class="card-img-top" src="../../assets/profile/profile.jpg">
     <div class="card-body">
-      <!-- <h5 class="card-title">Card title</h5> -->
-      <h5 class="card-text" *ngFor="let info of personalInfo"> {{info}}</h5>
-      <span><a href="#"><img class="icon" src="../../assets/profile/facebook.png" alt=""></a></span>
-      <span><a href="#"><img class="icon" src="../../assets/profile/twitter.png" alt=""></a></span>
+      <div *ngFor="let info of personalInfo">
+        <h5 class="card-text">Name:  {{info.name}}</h5>
+        <h5 class="card-text">Title:  {{info.title}}</h5>
+        <h5 class="card-text">Address:  {{info.address}}</h5>
+        <h5 class="card-text">Email:  {{info.email}}</h5>
+        <span><a href="https://{{info.facebook}}"><img class="icon" src="../../assets/profile/facebook.png" alt=""></a></span>
+        <span><a href="https://{{info.instagram}}"><img class="icon" src="../../assets/profile/twitter.png" alt=""></a></span>
+      </div>
     </div>
     <hr>
     <div class="card-body">
       <h5 class="card-title">Location</h5>
       <div id="map" class="col" #gmap style="height:250px;">
     </div>
-  </div>
 </div>
 
