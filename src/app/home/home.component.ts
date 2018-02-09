@@ -77,21 +77,5 @@ export class HomeComponent implements OnInit {
     this._data.addInfo(this.personalInfo);
   }
 
-// geocodeAddress() {
-//   var resultsMap = new google.maps.Map(document.getElementById('map'), {
-//     zoom: 15,
-//     center: {lat: -34.397, lng: 150.644}
-//   });
-//   var geocoder = new google.maps.Geocoder();
-//   geocoder.geocode({'address': this.latitude}, function(results, status) {
-//     console.log(this.latitude);
-//       resultsMap.setCenter(results[0].geometry.location);
-//       var marker = new google.maps.Marker({
-//         map: resultsMap,
-//         position: results[0].geometry.locations
-//       });
-//   });
-// }
-
 
 }

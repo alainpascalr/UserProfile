@@ -1,14 +1,17 @@
 <div class="container">
   <div class="card">
+    <div class="card-header" *ngFor="let info of personalInfo">
+      <h5>{{info.name}}'s card</h5>
+    </div>
     <img class="card-img-top" src="../../assets/profile/profile.jpg">
     <div class="card-body">
       <div *ngFor="let info of personalInfo">
-        <h5 class="card-text">Name:  {{info.name}}</h5>
-        <h5 class="card-text">Title:  {{info.title}}</h5>
-        <h5 class="card-text">Address:  {{info.address}}</h5>
-        <h5 class="card-text">Email:  {{info.email}}</h5>
-        <span><a href="https://{{info.facebook}}"><img class="icon" src="../../assets/profile/facebook.png" alt=""></a></span>
-        <span><a href="https://{{info.instagram}}"><img class="icon" src="../../assets/profile/twitter.png" alt=""></a></span>
+        <h6 class="card-text">Name:  {{info.name}}</h6>
+        <h6 class="card-text">Title:  {{info.title}}</h6>
+        <h6 class="card-text">Address:  {{info.address}}</h6>
+        <h6 class="card-text">Email:  {{info.email}}</h6>
+        <span><a href="https://{{info.facebook}}"><img class="icon facebook" src="../../assets/profile/facebook.png" alt=""></a></span>
+        <span><a href="https://{{info.instagram}}"><img class="icon twitter" src="../../assets/profile/twitter.png" alt=""></a></span>
       </div>
     </div>
     <hr>
@@ -16,5 +19,16 @@
       <h5 class="card-title">Location</h5>
       <div id="map" class="col" #gmap style="height:250px;">
     </div>
+
+
 </div>
+</div>
+</div>
+
+<div>
+  <input type="button" routerLink ="" class="button" value="Go back">
+</div>
+
+
+
 

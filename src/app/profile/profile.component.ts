@@ -4,6 +4,7 @@ import { } from '@types/googlemaps';
 import { ActivatedRoute } from '@angular/router/src/router_state';
 import { Router } from '@angular/router/src/router';
 import { RouterLink } from '@angular/router/src/directives/router_link';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-profile',

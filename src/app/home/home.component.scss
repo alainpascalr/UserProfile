@@ -6,6 +6,10 @@
 div.centered{
     text-align: center;
 }
+h1{
+    text-align: center;
+    margin: 2em;
+}
 input.text {
     border: 0;
     padding: 1em;
@@ -15,7 +19,7 @@ input.text {
 input.button {
     border: 0;
     padding:1em 3em;
-    background: linear-gradient(135deg, rgb(19, 241, 252), rgb(4, 112, 220));
+    background: linear-gradient(135deg, #033395, #27F0F0);
     color:rgb(255, 255, 255);
     margin-bottom:2em;
     cursor:pointer;
@@ -24,10 +28,7 @@ p.text{
     margin: auto 20%;
     float: left;
 }
-h1{
-    text-align: center;
-    margin: 2em;
-}
+
 
 
 
@@ -43,7 +44,8 @@ h1{
     background: #2885C4;
 }
 .color-light {
-    background: rgb(43, 79, 104);
+    background: #1A2239    ;
+    box-shadow: 15px 15px #11141d;
 }
 
 input.txt {

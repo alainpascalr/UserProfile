@@ -1,5 +1,5 @@
 <div class="container color-light">
-  <form class="form-inline" #form="ngForm">
+  <form class="" #form="ngForm">
     <h1>Create your profile card</h1>
     <div class="centered">
       <input type="text" class="text" name="name" placeholder="Full name" [(ngModel)] = "name">
@@ -9,9 +9,9 @@
       <input type="email" class="text" name="email" placeholder="Email" [(ngModel)] = "email">
       <p class="text">Social Media</p>
       <input type="url" class="text" name="social" placeholder="Facebook URL" [(ngModel)]="facebook">
-      <input type="url" class="text" name="instagram" placeholder="Instagram URL" [(ngModel)] = "instagram">
+      <input type="url" class="text" name="instagram" placeholder="Twitter URL" [(ngModel)] = "instagram">
       <div>
-        <input type="button" routerLink ="profile" class="button" value="Create Profile" (click)="addItem()">
+        <input type="submit" routerLink ="profile" class="button" value="Create Profile" (click)="addItem()">
       </div>
     </div>
   </form>

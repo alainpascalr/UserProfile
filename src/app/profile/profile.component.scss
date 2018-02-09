@@ -1,22 +1,39 @@
 .container{
     display: flex;
     justify-content: center;
-    width: 40%;
-    margin-top: 5%;
-}
-div.centered{
-    text-align: center;
+    width: 50%;
+    margin-top: 3%;
 }
 .card{
     border: 0;
+    background-image: linear-gradient(to bottom, #171b32, #1c2646, #1e325b, #1b3f70, #0d4d87);
+    
 }
 .card-body{
-    color: black;
+    color: whtie;
 }
 .card-text{
-    font-weight: 300;
+    font-weight: 500;
 }
-.icon{
-    width: 40px;
-    height: 40px;
+.icon.facebook{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+span{
+    margin-top: 2em;
+}
+.icon.twitter{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+input.button {
+    margin-top: 3em;
+    border: 0;
+    padding:1em 3em;
+    background: linear-gradient(135deg, #033395, #27F0F0);
+    color:rgb(255, 255, 255);
+    margin-bottom:2em;
+    cursor:pointer;
 }
