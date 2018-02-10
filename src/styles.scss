@@ -4,7 +4,11 @@
 
 body {
     // background: linear-gradient(to bottom right, #033395, #27F0F0);
-    background: #111424 ;
+    // background: #111424 ;
+    background:
+    linear-gradient(rgba(12, 27, 35, 0.65), rgba(12, 27, 35, 0.65)),
+    url("../src/assets/profile/background.jpg");
+    background-size: cover;
     padding: 3em;
     font-family: 'Raleway', 'Arial';
     color:#fff;

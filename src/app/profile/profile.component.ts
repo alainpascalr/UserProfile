@@ -15,6 +15,7 @@ export class ProfileComponent implements OnInit {
   personalInfo: any;
   map: google.maps.Map;
   address:string;
+  male: string;
 
   @ViewChild('gmap') gmapElement: any;
 
@@ -24,7 +25,6 @@ export class ProfileComponent implements OnInit {
   //Initiate the card with a default address and receive the data provided from the form.
   ngOnInit() {
     this._data.info.subscribe ((response) => {
-      console.log(response)
       this.personalInfo = [
         {
           name: response[0],
@@ -46,7 +46,6 @@ export class ProfileComponent implements OnInit {
 
   //Update the card based on the correct address.
   geocodeAddress() {
-    console.log(this.personalInfo);
     var resultsMap = new google.maps.Map(document.getElementById('map'), {
       zoom: 15,
       center: {lat: -34.397, lng: 150.644}

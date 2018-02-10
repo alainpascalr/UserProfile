@@ -51,9 +51,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     // this.itemCount = this.goals.length;
-
+    this.personalInfo = [];
     this._data.info.subscribe (res=> this.personalInfo = res);
-    this._data.addInfo(this.personalInfo);
+    // this._data.addInfo(this.personalInfo);
 
     // var resultsMap = new google.maps.Map(document.getElementById('map'), {
     //   zoom: 12,

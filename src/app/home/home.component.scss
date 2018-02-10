@@ -1,7 +1,8 @@
 .container{
     display: flex;
     justify-content: center;
-    width: 70%;
+    // width: 60%;
+    // opacity: 0.96;
 }
 div.centered{
     text-align: center;
@@ -19,7 +20,8 @@ input.text {
 input.button {
     border: 0;
     padding:1em 3em;
-    background: linear-gradient(135deg, #033395, #27F0F0);
+    // background: linear-gradient(135deg, #033395, #27F0F0);
+    background: #1A2239    ;
     color:rgb(255, 255, 255);
     margin-bottom:2em;
     cursor:pointer;
@@ -44,8 +46,9 @@ p.text{
     background: #2885C4;
 }
 .color-light {
-    background: #1A2239    ;
-    box-shadow: 15px 15px #11141d;
+    // background: #1A2239    ;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    // box-shadow: 15px 15px #11141d;
 }
 
 input.txt {

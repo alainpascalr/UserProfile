@@ -1,18 +1,21 @@
-<div class="container color-light">
-  <form class="" #form="ngForm">
+<div class="container color-light col-sm-12 col-md-10 col-lg-7">
+  <form class="" #form="ngForm" name="form">
     <h1>Create your profile card</h1>
     <div class="centered">
-      <input type="text" class="text" name="name" placeholder="Full name" [(ngModel)] = "name">
-      <input type="text" class="text" name="title" placeholder="Job title" [(ngModel)] = "title">
-      <input type="text" class="text" name="address" placeholder="Full address" [(ngModel)] = "address">
+        <p class="text">Personal Info (Required)</p>
+      <input type="text" class="text" name="name" placeholder="Full name" [(ngModel)] = "name" required>
+      <input type="text" class="text" name="title" placeholder="Job title" [(ngModel)] = "title" required >
+      <input type="text" class="text" name="address" placeholder="Full address" [(ngModel)] = "address" required >
       <!-- <input type="text" class="text" name="province" placeholder="Province" [(ngModel)] = "province"> -->
-      <input type="email" class="text" name="email" placeholder="Email" [(ngModel)] = "email">
-      <p class="text">Social Media</p>
+      <input type="email" class="text" name="email" placeholder="Email" [(ngModel)] = "email" required >
+      <p class="text">Social Media (Optional)</p>
       <input type="url" class="text" name="social" placeholder="Facebook URL" [(ngModel)]="facebook">
       <input type="url" class="text" name="instagram" placeholder="Twitter URL" [(ngModel)] = "instagram">
       <div>
-        <input type="submit" routerLink ="profile" class="button" value="Create Profile" (click)="addItem()">
+        <input [disabled]="!form.valid" type="submit" routerLink ="profile" value="Text" class="button" value="Create Profile" (click)="addItem()">
+
       </div>
+
     </div>
   </form>
 </div>
