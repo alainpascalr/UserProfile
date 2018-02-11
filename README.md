@@ -1,8 +1,8 @@
 ## Set Up
 
-Run `npm install @angular/cli -g` in the command line to install the latest version of angular on your machine.
+* Run `npm install @angular/cli -g` in the command line to install the latest version of angular on your machine.
 Navigate to the project folder.
-Run `npm install ` in the project folder.
+* Run `npm install ` in the project folder.
 
 
 ## Run the project
