@@ -1,8 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
 import { DataService } from '../data.service';
 import { } from '@types/googlemaps';
-import { ActivatedRoute } from '@angular/router/src/router_state';
-import { Router } from '@angular/router/src/router';
+// import { ActivatedRoute } from '@angular/router/src/router_state';
+// import { Router } from '@angular/router/src/router';
 import { RouterLink } from '@angular/router/src/directives/router_link';
 import { HomeComponent } from '../home/home.component';
 
@@ -15,7 +16,6 @@ export class ProfileComponent implements OnInit {
   personalInfo: any;
   map: google.maps.Map;
   address:string;
-  male: string;
 
   @ViewChild('gmap') gmapElement: any;
 

@@ -3,30 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
 
 body {
-    // background: linear-gradient(to bottom right, #033395, #27F0F0);
-    // background: #111424 ;
     background:
     linear-gradient(rgba(12, 27, 35, 0.65), rgba(12, 27, 35, 0.65)),
-    url("../src/assets/profile/background.jpg");
+    url("../src/assets/profile/background1.jpg");
     background-size: cover;
-    padding: 3em;
+    padding-top: 3em;
     font-family: 'Raleway', 'Arial';
     color:#fff;
     text-align: center;
 }
-ul {
-    list-style-type:none;
-    margin:0 0 2em 0;
-    padding:0;
-}
-ul li {
-    display:inline;
-    margin-right: 30px;
-}
-ul li a {
-    font-size: 1.5em;
-}
-a {
-    color:#fff;
-    text-decoration:none;
+footer{
+    background:black; 
+    width:100%; 
+    padding: 2em;
 }

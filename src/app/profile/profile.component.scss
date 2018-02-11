@@ -1,15 +1,10 @@
 .container{
     display: flex;
     justify-content: center;
-    // width: 50%;
-    // margin-top: 3%;
 }
 .card{
     border: 0;
-    // background-image: linear-gradient(to bottom, #171b32, #1c2646, #1e325b, #1b3f70, #0d4d87);
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    // box-shadow: 15px 15px #11141d;
-    
+    background: linear-gradient(135deg,#29323C,#2B5876,#4E4376);  
 }
 .card-body{
     color: whtie;
@@ -37,8 +32,8 @@ a{
 input.button {
     margin-top: 3em;
     border: 0;
+    font-size: 14pt;
     padding:1em 3em;
-    // background: linear-gradient(135deg, #033395, #27F0F0);
     background: #1A2239;
     color:rgb(255, 255, 255);
     margin-bottom:2em;

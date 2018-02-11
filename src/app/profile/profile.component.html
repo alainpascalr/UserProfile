@@ -1,4 +1,4 @@
-<div class="container col-sm-12 col-md-10 col-lg-7">
+<div class="container animated zoomInDown col-sm-12 col-md-10 col-lg-7">
   <div class="card">
     <div class="card-header" *ngFor="let info of personalInfo">
       <h4>{{info.name}}'s card</h4>
@@ -17,14 +17,10 @@
     <hr>
     <div class="card-body">
       <h5 class="card-title">Location</h5>
-      <div id="map" class="col" #gmap style="height:250px;">
+      <div id="map" class="col" #gmap style="height:300px;"></div>
     </div>
-
-
+  </div>
 </div>
-</div>
-</div>
-
 <div>
   <a href=""><input type="button" class="button" value="Go back"></a>
 </div>
