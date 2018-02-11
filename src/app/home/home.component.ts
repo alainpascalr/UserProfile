@@ -23,7 +23,9 @@ export class HomeComponent implements OnInit {
   email: string;
   facebook: string;
   twitter:string;
+  gender: string='';
   personalInfo= [];
+
 
   constructor(private _data: DataService) { }
 
@@ -31,9 +33,11 @@ export class HomeComponent implements OnInit {
     this.personalInfo = [];
     this._data.info.subscribe (res=> this.personalInfo = res);
   }
+  
 
-  addItem(){
+  createCard(){
     this.personalInfo.push(this.name);
+    this.personalInfo.push(this.gender);
     this.personalInfo.push(this.title);
     this.personalInfo.push(this.address);
     this.personalInfo.push(this.email);

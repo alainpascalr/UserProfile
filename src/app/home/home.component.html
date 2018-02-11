@@ -1,9 +1,17 @@
 <div class="animated fadeIn container color-light col-sm-12 col-md-10 col-lg-7">
-  <form class="form-group" #form="ngForm" name="form">
+  <form class="form-group" #form="ngForm" name="form" >
     <h1 class="">Create your profile card</h1>
     <div class="centered">
       <p class="text">Personal Info (Required)</p>
       <input type="text" class="text" name="name" placeholder="Full name" [(ngModel)] = "name" required>
+      <div class="form-check form-check-inline male">
+        <input class="form-check-input" type="radio" name="gender" [(ngModel)] = "gender" id="inlineRadio1" value="male" required>
+        <label class="form-check-label" for="inlineRadio1">Male</label>
+      </div>
+      <div class="form-check form-check-inline female">
+        <input class="form-check-input" type="radio" name="gender" [(ngModel)] = "gender" id="inlineRadio2" value="female" required>
+        <label class="form-check-label" for="inlineRadio2">Female</label>
+      </div>
       <input type="text" class="text" name="title" placeholder="Job title" [(ngModel)] = "title" required >
       <input type="text" class="text" name="address" placeholder="Full address" [(ngModel)] = "address" required >
       <input type="email" class="text" name="email" ngModel [email]="true" placeholder="Email" [(ngModel)] = "email" required >
@@ -11,7 +19,7 @@
       <input type="url" class="text" name="social" placeholder="Facebook URL" [(ngModel)]="facebook">
       <input type="url" class="text" name="twitter" placeholder="Twitter URL" [(ngModel)] = "twitter">
       <div>
-        <input [disabled]="!form.valid" type="submit" routerLink ="profile" value="Text" class="button" value="Create Profile" (click)="addItem()">
+        <input [disabled]="!form.valid" type="submit" routerLink ="profile" value="Text" class="button" value="Create Profile" (click)="createCard()">
       </div>
     </div>
   </form>
