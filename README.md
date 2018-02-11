@@ -9,9 +9,6 @@ Navigate to the project folder.
 Navigate to the project folder.
 Run `ng serve` and go to http://localhost:4200 in your web browser to load the project. 
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Any Questions?
 Feel free to contact me at alainpascalr@gmail.com
