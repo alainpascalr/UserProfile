@@ -1,5 +1,3 @@
-![alt text](src\assets\\profile\profile.jpg "Description goes here")
-
 ## Set Up
 
 * Run `npm install @angular/cli -g` in the command line to install the latest version of angular on your machine.
